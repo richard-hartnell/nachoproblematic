@@ -6,9 +6,15 @@
     --rose: #cd5096;
 }
 
+@font-face {
+    font-family: Futura-Med;
+    src: url(FuturaStd-Medium.otf);
+}
+
 html {
 
 }
 
 body {
-    font-family: 
+    font-family: Futura-Med;
+}
