@@ -11,10 +11,33 @@
     src: url(FuturaStd-Medium.otf);
 }
 
+html, body {
+    height: 98%;
+}
+
 html {
 
 }
 
 body {
     font-family: Futura-Med;
+    width: 100%;
+    background-image: linear-gradient(165deg, var(--lime), var(--rose), var(--gold));
+}
+
+#topbar {
+    position: absolute;
+    top: 0px; left: 0px;
+    height: 4%;
+    width: 100%;
+    background-color: black;
+}
+
+#toplogo {
+    max-width: 40%;
+
+}
+
+#coming-soon {
+    text-align: center;
 }
