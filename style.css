@@ -17,12 +17,33 @@ html, body {
 }
 
 html {
+    background-color: black;
+    margin: auto;
+}
 
+.gutter-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.gutter-right {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    object-fit: contain;
+    max-height: 100%;
 }
 
 body {
+    align-self: center;
+    margin: auto;
     font-family: Futura-Med;
     width: 100%;
+    max-width: 1000px;
     background-image: linear-gradient(165deg, var(--lime), var(--rose), var(--gold));
 }
 
