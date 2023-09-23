@@ -90,19 +90,16 @@ header h3 {
     height: 40px;
     width: 100%;
     background-color: black;
-
+    transition: 1s;
 }
 
 .topbar-pulled {
-    
-    animation-name: pull;
-    animation-duration: 1s;
-    
+    animation: pull;
 }
 
 @keyframes pull {
-    from {height: 40px;}
-    to {top: 80%;}
+    0%: {height: 40px;}
+    100%: {top: 80%;}
 }
 
 #toplogo {
