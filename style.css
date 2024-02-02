@@ -112,8 +112,9 @@ header h3 {
 }
 
 #surp {
-    position: relative;
-    top: -10vh;
+    position: fixed;
+    top: 10vh;
+    display: none;
     /* margin: 0 auto; */
 }
 

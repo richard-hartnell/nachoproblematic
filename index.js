@@ -1,5 +1,5 @@
 const theTop = document.getElementById('topbar');
-const surprise = document.getElementById('nacho-surprise');
+const surprise = document.getElementById('surp');
 const toplogo = document.getElementById('toplogo');
 document.getElementById('toplogo').addEventListener("click", pullTopBar)
 
@@ -11,8 +11,7 @@ function pullTopBar() {
     document.getElementById('toplogo').style.top = '98%';
     // document.getElementById('toplogo').style.paddingTop = '4vw';
     document.getElementById('nacho-rule').classList.add('fadein');
-    setTimeout(100);
-    document.getElementById('surprise').classList.add('fadein');
-    surprise.style.display = 'block';
+    setTimeout(function() {document.getElementById('surp').classList.add('fadein');
+    surprise.style.display = 'block';}, 400);
 
 }
