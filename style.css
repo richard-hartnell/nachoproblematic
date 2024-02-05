@@ -108,16 +108,25 @@ header h3 {
     height: 40px;
     width: 100%;
     background-color: black;
-    z-index: 1;
+    z-index: 2;
 }
 
 #surp {
     position: fixed;
-    top: 10vh;
+    top: -10vh;
     display: none;
     /* margin: 0 auto; */
 }
 
+.moveit {
+    top: 10vh;
+    display: block;
+}
+
+@keyframes moveit {
+    0% {top: -10px;}
+    100% {opacity: 10vh}
+}
 
 #toplogo {
     position: relative;
@@ -125,10 +134,6 @@ header h3 {
     max-width: 325px;
 }
 
-@keyframes pull {
-    0%: {height: 40px;}
-    100%: {top: 80%;}
-}
 
 #coming-soon {
     text-align: center;
@@ -138,14 +143,14 @@ header h3 {
 }
 
 #nacho-surprise {
-    display: none;
-    position: relative;
-    transition: 1s;
+    display: block;
+    position: absolute;
+    top: -40vh;
+    /* transition: 1s; */
     text-align: center;
     margin-top: 35vh;
     color: white;
-    z-index: 9;
-
+    z-index: 3;
 }
 
 footer {
