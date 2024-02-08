@@ -111,13 +111,6 @@ header h3 {
     z-index: 2;
 }
 
-#surp {
-    position: fixed;
-    top: -10vh;
-    display: none;
-    /* margin: 0 auto; */
-}
-
 .moveit {
     top: 10vh;
     display: block;
@@ -142,16 +135,40 @@ header h3 {
     z-index: 9;
 }
 
-#nacho-surprise {
-    display: block;
+
+#surprise-top {
+    margin-top: 17em;
+}
+
+#surprise-separator-two {
+    background-color: white;
+    clip-path: polygon(20% 40%, 76% 0, 64% 50%, 100% 50%, 47% 100%, 60% 50%, 8% 100%, 25% 50%, 0 60%, 36% 0);
+    height: 200px;
+}
+
+#surprise-soon {
+    margin: 0;
+    background-image: url('./cheetah-transparent.webp');
+    width: 100%;
+}
+
+#surprise {
+    display: flex;
+    background-image: linear-gradient(0deg, black, var(--blue), var(--gold));
+    height: 100%;
+    flex-direction: column;
+    /* flex-basis: space-around; */
+    justify-content: center;
+    width: 100%;
     position: absolute;
-    top: -40vh;
-    /* transition: 1s; */
+    bottom: 130vh;
     text-align: center;
-    margin-top: 35vh;
+    margin: 0 auto;
     color: white;
     z-index: 3;
 }
+
+
 
 footer {
     display: flex;
