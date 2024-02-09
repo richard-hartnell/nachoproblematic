@@ -157,7 +157,6 @@ header h3 {
     background-image: linear-gradient(0deg, black, var(--blue), var(--gold));
     height: 100%;
     flex-direction: column;
-    /* flex-basis: space-around; */
     justify-content: center;
     width: 100%;
     position: absolute;
