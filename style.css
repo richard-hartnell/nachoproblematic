@@ -147,7 +147,6 @@ header h3 {
 }
 
 #surprise-soon {
-    margin: 0;
     background-image: url('./cheetah-transparent.webp');
     width: 100%;
 }
@@ -162,8 +161,7 @@ header h3 {
     background-image: linear-gradient(0deg, black, var(--blue), var(--lime), var(--gold));
     height: 100%;
     flex-direction: column;
-    /* flex-basis: space-around; */
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     position: absolute;
     bottom: 130vh;
@@ -172,8 +170,6 @@ header h3 {
     color: white;
     z-index: 3;
 }
-
-
 
 footer {
     display: flex;
@@ -190,7 +186,7 @@ footer {
 }
 
 footer section {
-    /* padding-top: 0; */
+    /* fix the footer padding */
 }
 
 footer h2 {
