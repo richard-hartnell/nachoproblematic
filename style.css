@@ -132,7 +132,7 @@ header h3 {
 
 #surprise-top {
     position: relative;
-    margin-top: 17em;
+    /* margin-top: 17em; */
     color: black;
     height: 80%;
     background-image: url('./inside_01.jpg');
@@ -235,7 +235,17 @@ footer {
     }
 
     #surprise {
-        /* its height isn't big enough. */
+        background-color: black;
+        height: 100%;
+    }
+
+    #surprise-top {
+        /* margin-top: 0em; */
+    }
+
+    #hand {
+        left: 100px;
+        top: -50px;
     }
     
 }
