@@ -143,31 +143,19 @@ header h3 {
     z-index: 9;
 }
 
-
 #surprise-top {
     position: relative;
     /* margin-top: 17em; */
     color: black;
     height: 80%;
-    background-image: url('./inside_01.jpg');
+    background-image: url('./surprise-bg-landscape.webp');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
-/* 
-#surprise-separator-two {
-    position: relative;
-    background-image: url('./compbook.jpg');
-    clip-path: polygon(20% 40%, 76% 0, 64% 50%, 100% 50%, 47% 100%, 60% 50%, 8% 100%, 25% 50%, 0 60%, 36% 0);
-    height: 125px;
-    transform: translateY(-40px);
-} */
 
 #surprise-soon {
-    /* background-image: url('./cheetah-transparenter.webp'); */
     background-image: url('./compbook.jpg');
-    /* background-position: center; */
-    /* background-size: cover; */
     width: 100%;
     height: 2%;
     border-bottom: 2px solid black;
@@ -226,11 +214,22 @@ footer {
     #nacho-rule {
         font-size: 2vh;
     }
+
+    #surprise-top {
+        position: relative;
+        /* margin-top: 17em; */
+        color: black;
+        height: 80%;
+        background-image: url('./surprise-bg-portrait.webp');
+        background-position: 0px 22vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 500px) {
     #place, #hours {
-        font-size: 0.7em;
+        font-size: 0.6em;
         align-self: center;
     }
 
@@ -241,7 +240,7 @@ footer {
     #toplogo {
         position: relative;
         transform: translateY(-10px);
-        max-width: 225px;
+        max-height: 18vh;
     }
 
     #hand {
