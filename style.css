@@ -12,21 +12,30 @@
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
+    /* height: auto; */
+    /* margin: 0; */
 }
 
 html {
     background-color: black;
     margin: auto;
+    
+    min-height: 700px;
+    
 }
 
 body {
+    height: 100%;
+    min-height: 700px;
     align-self: center;
     margin: auto;
     font-family: Futura-Med;
     width: 100%;
     background-image: linear-gradient(165deg, var(--lime), var(--rose), var(--gold));
+}
+
+main {
+    min-height: 700px;
 }
 
 header {
@@ -48,7 +57,7 @@ header h3 {
 
 #hand {
     position: fixed;
-    left: 150px;
+    left: 10vw;
     max-height: 40px;
     animation-name: hand;
     animation-duration: 0.5s;
@@ -75,8 +84,8 @@ header h3 {
 }
 
 @keyframes hand {
-    from {top: 215px;}
-    to {top: 205px;}
+    from {top: 21%;}
+    to {top: 22%;}
 }
 
 @keyframes fadein {
@@ -114,13 +123,14 @@ header h3 {
     justify-content: space-between;
     top: 0px; left: 0px;
     height: 40px;
+    min-height: 40px;
     width: 100%;
     background-color: black;
     z-index: 2;
 }
 
 .moveit {
-    top: 10vh;
+    top: 10%;
     display: block;
 }
 
@@ -132,9 +142,11 @@ header h3 {
 #toplogo {
     position: relative;
     transform: translateY(-40px);
-    max-width: 325px;
+    max-height: 30%;
+    min-height: 30vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-
 
 #coming-soon {
     text-align: center;
@@ -188,8 +200,17 @@ footer {
     position: fixed;
     bottom: 0px;
     height: 75px;
+    max-height: 75px;
     width: 100%;
     color: white;
+    z-index: 2;
+}
+
+#place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #hours {
@@ -213,6 +234,10 @@ footer {
 @media only screen and (orientation: portrait) {
     #nacho-rule {
         font-size: 2vh;
+    }
+
+    #hand {
+        left: 25vw;
     }
 
     #surprise-top {
@@ -257,8 +282,9 @@ footer {
     }
 
     #hand {
-        left: 100px;
-        top: -50px;
+        
+        /* left: 19vw; */
+        /* top: -50px; */
     }
     
 }

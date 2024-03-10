@@ -11,7 +11,7 @@ function pullTopBar() {
     theTop.style.bottom = '30%';
     toplogo.style.bottom = '-98%';
     surprise.style.transition = '0.75s';
-    surprise.style.bottom = '30vh';
+    surprise.style.bottom = '30%';
     surprisetop.style.height = '100%';
     document.getElementById('nacho-rule').classList.add('fadein');
 }
