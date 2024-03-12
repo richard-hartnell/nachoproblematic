@@ -1,14 +1,19 @@
 const theTop = document.getElementById('topbar');
 const surprise = document.getElementById('surprise');
 const surprisetop = document.getElementById('surprise-top');
+const mainText = document.getElementById('coming-soon');
 const toplogo = document.getElementById('toplogo');
-document.getElementById('toplogo').addEventListener("click", toggleTopBar)
+document.getElementById('menu-about').addEventListener("click", retractTopBar);
+document.getElementById('menu-nachos').addEventListener("click", retractTopBar);
+document.getElementById('menu-drinks').addEventListener("click", retractTopBar);
+document.getElementById('menu-links').addEventListener("click", retractTopBar);
+document.getElementById('toplogo').addEventListener("click", toggleTopBar);
 
 function toggleTopBar() {
     if (theTop.style.height === '40px') {
         pullTopBar();
     } else {
-        retractTopBarMenu();
+        retractTopBar();
     }
 }
 
@@ -24,8 +29,10 @@ function pullTopBar() {
     document.getElementById('nacho-rule').classList.add('fadein');
 }
 
-function retractTopBarMenu() {
-    document.getElementById('hand').style = "display: block";
+function retractTopBar(event) {
+    if (event) {
+        console.log(event.target.id);
+    }
     theTop.style.transition = '0.75s';
     toplogo.style.transition = '0.75s';
     theTop.style.height = '40px';

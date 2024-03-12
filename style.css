@@ -152,6 +152,7 @@ header h3 {
     min-height: 20vh;
     margin-bottom: 0;
     padding-bottom: 0;
+    transition: 0.75s;
 }
 
 #coming-soon {
@@ -282,6 +283,7 @@ footer {
     #toplogo {
         transform: translateY(10px);
     }
+
 }
 
 @media screen and (max-width: 500px) {
