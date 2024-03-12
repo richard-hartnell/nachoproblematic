@@ -98,6 +98,11 @@ header h3 {
     100% {opacity: 1}
 }
 
+@keyframes fadeout {
+    0% {opacity: 1;}
+    100% {opacity: 0}
+}
+
 #nacho-menu {
     display: none;
 }
@@ -151,7 +156,7 @@ header h3 {
 
 #toplogo {
     position: relative;
-    transform: translateY(-40px);
+    /* transform: translateY(-555px); */
     max-height: 25vh;
     min-height: 20vh;
     margin-bottom: 0;
@@ -286,14 +291,19 @@ footer {
 }
 
 #surprise-box {
-    position: block;
-    background: hsl(120, 100%, 50%, 0.5);
+    position: absolute;
+    background: hsla(120, 1%, 52%, 0.6);
     border: 2px solid gold;
+    color: var(--gold);
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.5em;
     z-index: 33;
-    height: 50%;
-    width: 25vw;
+    height: 55%;
+    width: 40vw;
     margin: 0 auto;
-    margin-top: 350px;
+    /* margin-top: 425px; */
+    bottom: 10%;
+    margin-left: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -302,7 +312,7 @@ footer {
 
 @media screen and (aspect-ratio > 1) {
     #toplogo {
-        transform: translateY(10px);
+        transform: translateY(-20px);
     }
 
 }

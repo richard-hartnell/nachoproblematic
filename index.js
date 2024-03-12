@@ -61,6 +61,7 @@ function toggleTopBar() {
 }
 
 function pullTopBar() {
+    document.getElementById('nacho-rule').classList.remove('fadeout');
     document.getElementById('nacho-rule').classList.add('fadein');
     document.getElementById('hand').style = "display: none";
     theTop.style.transition = '0.75s';
@@ -70,23 +71,23 @@ function pullTopBar() {
     surprise.style.transition = '0.75s';
     surprise.style.bottom = '30%';
     surprisetop.style.height = '100%';
-    mainText.innerHTML = "";
+    // mainText.innerHTML = "";
 }
 
 function retractTopBar(event) {
+    document.getElementById('nacho-rule').classList.remove('fadein');
+    document.getElementById('nacho-rule').classList.add('fadeout');
+
     if (event) {
         if (event.target.id === 'menu-about') {
-            console.log(event.target.id);
             mainText.innerHTML = aboutHTML;
         } else if (event.target.id === 'menu-nachos') {
-            console.log(event.target.id);
             mainText.innerHTML = nachosHTML;
         } else if (event.target.id === 'menu-drinks') {
-            console.log(event.target.id);
             mainText.innerHTML = drinksHTML;
         } else if (event.target.id === 'menu-links') {
-            console.log(event.target.id);
             mainText.innerHTML = linksHTML;
+        } else if (event.target.id === 'top-logo') {
         }
     }
     theTop.style.transition = '0.75s';
@@ -97,5 +98,4 @@ function retractTopBar(event) {
     surprise.style.transition = '0.75s';
     surprise.style.bottom = '130vh';
     surprisetop.style.height = '100%';
-    document.getElementById('nacho-rule').classList.remove('fadein');
 }
