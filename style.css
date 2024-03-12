@@ -84,6 +84,10 @@ header h3 {
     animation: fadein 2s forwards;
 }
 
+.fadeout {
+    animation: fadeout 2s forwards;
+}
+
 @keyframes hand {
     from {top: 26vh;}
     to {top: 28vh;}
@@ -155,11 +159,28 @@ header h3 {
     transition: 0.75s;
 }
 
-#coming-soon {
-    text-align: center;
+#maintext-wrapper {
     margin-top: 35vh;
+}
+
+#coming-soon {
+    height: 100%;
+    /* margin-top: -25vh; */
+    text-align: center;
+    width: 100%;
     color: white;
     z-index: 9;
+}
+
+#about-us {
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    transform: translateY(-15vh);
+}
+
+#nacho-styles {
+    transform: translateY(-15vh);
 }
 
 #surprise-top {
