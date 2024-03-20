@@ -21,6 +21,7 @@ aboutHTML = `<div id="about-us">
 
 nachosHTML = `<div id="nacho-styles">
 <h1>Nacho Menu</h1>
+<br>
 <h2>Cheese</h2>
 <p>Jack and cheddar, Oaxaca, fresco</p>
 <h2>Street Taco</h2>
