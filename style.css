@@ -310,6 +310,10 @@ footer {
 
 }
 
+#surprise-box h2 {
+    cursor: pointer;
+}
+
 @media screen and (aspect-ratio > 1) {
     #toplogo {
         transform: translateY(-20px);
