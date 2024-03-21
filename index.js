@@ -36,7 +36,7 @@ const nachosHTML = `<div id="nacho-styles">
 <p>Jack and cheddar, black beans, avocado, bell peppers, green onion, tomatoes</p>
 <h2>Gas Station</h2>
 <p>Cheese sauce, ground beef, black olives, pickled jalapenos</p>
-<h2>Street Corn</h2>
+<h2>Elote</h2>
 <p>Jack and cheddar, cotija, garlic, cilantro, corn, tajin</p>
 </div>
 `;
