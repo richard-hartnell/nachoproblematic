@@ -9,7 +9,7 @@ document.getElementById('menu-drinks').addEventListener("click", retractTopBar);
 document.getElementById('menu-links').addEventListener("click", retractTopBar);
 document.getElementById('toplogo').addEventListener("click", toggleTopBar);
 
-aboutHTML = `<div id="about-us">
+const aboutHTML = `<div id="about-us">
 <h1>About Us</h1>
 <p>Bar games, hanging out with friends, nachos.</p>
 <p>Styles ranging from classic veggies-in-melted-cheese to your dad's favorite gas station nachos smothered in queso 
@@ -19,7 +19,7 @@ aboutHTML = `<div id="about-us">
     </div>
 `;
 
-nachosHTML = `<div id="nacho-styles">
+const nachosHTML = `<div id="nacho-styles">
 <h1>Nacho Menu</h1>
 <br>
 <h2>Cheese</h2>
@@ -41,17 +41,19 @@ nachosHTML = `<div id="nacho-styles">
 </div>
 `;
 
-drinksHTML = `
+const drinksHTML = `
 <h1>Drink menu</h1>
 <p>Coming soon!</p>
 `;
 
-linksHTML = `
+const linksHTML = `
 <h1>Visit our sister bars:</h1>
 <h2><a href="https://www.theadmiraltylounge.com">The Admiralty Lounge</a>
 <br><br>
 <a href="https://www.bellaciao.bar">Bella Ciao</a></h2>
 `;
+
+const defaultText = `<h2>A 21 & up eclectic nacho experience.</h2>`;
 
 function toggleTopBar() {
     if (theTop.style.height != '75%') {
@@ -62,6 +64,10 @@ function toggleTopBar() {
 }
 
 function pullTopBar() {
+    console.log('pullTopBar');
+    if (mainText.innerHTML == defaultText) {
+        console.log('defaultText');
+    }
     document.getElementById('nacho-rule').classList.remove('fadeout');
     document.getElementById('nacho-rule').classList.add('fadein');
     document.getElementById('hand').style = "display: none";

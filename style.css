@@ -21,7 +21,7 @@ html {
     margin: auto;
     
     min-height: 700px;
-    
+    max-height: 100vh;
 }
 
 body {
