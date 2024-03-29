@@ -54,8 +54,11 @@ const drinksHTML = `<div id="drink-menu">
 <p>Pacifico</p>
 <p>Kulshan Transporter</p>
 <p>Menance Tirith Pale</p>
-<p>Crux Pilsner</p>
+<p>Crux Golden Pilsner</p>
 <p>Georgetown Bodhizafa IPA</p>
+<p>Larrabee Lager Co. Hefeweizen</p>
+<p>Menace Brewing Nitro Stout</p>
+<p>Kulshan Brewing Storm Clouds Doppelbock</p>
 <p>Dry Humor Cider</p>
 <br>
 <h2>Bottles / Cans</h2>
@@ -73,11 +76,12 @@ const drinksHTML = `<div id="drink-menu">
 </div>
 `;
 
-const linksHTML = `
+const linksHTML = `<div id="links">
 <h1>Visit our sister bars:</h1>
 <h2><a href="https://www.theadmiraltylounge.com">The Admiralty Lounge</a>
 <br><br>
 <a href="https://www.bellaciao.bar">Bella Ciao</a></h2>
+</div>
 `;
 
 const defaultText = `<h2>A 21 & up eclectic nacho experience.</h2>`;
