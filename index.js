@@ -20,7 +20,7 @@ const aboutHTML = `<div id="about-us">
 `;
 
 const nachosHTML = `<div id="nacho-styles">
-<h1>Nacho Menu</h1>
+<h1>NACHOS</h1>
 <br>
 <h2>Cheese</h2>
 <p>Jack and cheddar, Oaxaca, fresco</p>
@@ -41,9 +41,36 @@ const nachosHTML = `<div id="nacho-styles">
 </div>
 `;
 
-const drinksHTML = `
-<h1>Drink menu</h1>
-<p>Coming soon!</p>
+const drinksHTML = `<div id="drink-menu">
+<h1>DRINKS</h1>
+<br>
+<h2>Draught Cocktails</h2>
+<h3>Airport Margarita</h3>
+<p>Tequila, triple sec, mf'ing sour mix</p>
+<h3>Rapid Test Result</h3>
+<p>Horchata, cinnamon whiskey, rum</p>
+<br>
+<h2>Draught Beers</h2>
+<p>Pacifico</p>
+<p>Kulshan Transporter</p>
+<p>Menance Tirith Pale</p>
+<p>Crux Pilsner</p>
+<p>Georgetown Bodhizafa IPA</p>
+<p>Dry Humor Cider</p>
+<br>
+<h2>Bottles / Cans</h2>
+<p>Modelo</p>
+<p>Coors Light Tallboy</p>
+<p>Corona</p>
+<p>White Claw (mango)</p>
+<p>Yonder Cider (Blackberry & Sage)</p>
+<br>
+<h2>Non-Alcoholic</h2>
+<p>Athletic Brewing Golden Dawn</p>
+<p>Athletic Brewing IPA</p>
+<p>Phony Negroni</p>
+<p>H<sub>2</sub>O (free with a smile)</p>
+</div>
 `;
 
 const linksHTML = `
@@ -106,3 +133,5 @@ function retractTopBar(event) {
     surprise.style.bottom = '130vh';
     surprisetop.style.height = '100%';
 }
+
+document.getElementById('hand').style = "display: block";
