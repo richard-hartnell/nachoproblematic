@@ -109,10 +109,12 @@ function pullTopBar() {
     surprise.style.transition = '0.75s';
     surprise.style.bottom = '30%';
     surprisetop.style.height = '100%';
+    surprise.style.position = 'fixed';
     // mainText.innerHTML = "";
 }
 
 function retractTopBar(event) {
+    surprise.style.position = 'absolute';
     document.getElementById('nacho-rule').classList.remove('fadein');
     document.getElementById('nacho-rule').classList.add('fadeout');
 
