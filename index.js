@@ -80,7 +80,7 @@ const linksHTML = `<div id="links">
 <h1>Visit our sister bars:</h1>
 <h2><a href="https://www.theadmiraltylounge.com">The Admiralty Lounge</a>
 <br><br>
-<a href="https://www.bellaciao.bar">Bella Ciao</a></h2>
+<a href="https://www.bellaciao.bar">Bella Ciao Pizza Tavern</a></h2>
 </div>
 `;
 
