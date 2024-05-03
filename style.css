@@ -14,25 +14,20 @@
 html {
     background-color: black;
     margin: auto;
-    min-height: 700px;
-    max-height: 100vh;
+\    max-height: 100vh;
 }
 
 body {
-    height: 100%;
-    overflow: hidden;
-    /* min-height: 700px; */
-    max-height: 100%;
-    overflow: scroll;
+    overflow: auto;
     align-self: center;
-    margin: auto;
+    margin: auto 0;
     font-family: Futura-Med;
     width: 100%;
     background-image: linear-gradient(165deg, var(--lime), var(--rose), var(--gold));
 }
 
 main {
-    min-height: 700px;
+    min-height: 60vh;
 }
 
 header {
@@ -159,7 +154,7 @@ header h3 {
 }
 
 #coming-soon {
-    height: 100%;
+    max-height: 100%;
     text-align: center;
     width: 100%;
     color: white;
