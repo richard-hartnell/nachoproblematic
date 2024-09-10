@@ -20,7 +20,7 @@ const aboutHTML = `<div id="about-us">
 `;
 
 const nachosHTML = `<div id="nacho-styles">
-<h1>Nacho Menu</h1>
+<h1>NACHOS</h1>
 <br>
 <h2>Cheese</h2>
 <p>Jack and cheddar, Oaxaca, fresco</p>
@@ -36,21 +36,52 @@ const nachosHTML = `<div id="nacho-styles">
 <p>Jack and cheddar, black beans, avocado, bell peppers, green onion, tomatoes</p>
 <h2>Gas Station</h2>
 <p>Cheese sauce, ground beef, black olives, pickled jalapenos</p>
-<h2>Street Corn</h2>
+<h2>Elote</h2>
 <p>Jack and cheddar, cotija, garlic, cilantro, corn, tajin</p>
 </div>
 `;
 
-const drinksHTML = `
-<h1>Drink menu</h1>
-<p>Coming soon!</p>
+const drinksHTML = `<div id="drink-menu">
+<h1>DRINKS</h1>
+<br>
+<h2>Draught Cocktails</h2>
+<h3>Airport Margarita</h3>
+<p>Tequila, triple sec, mf'ing sour mix</p>
+<h3>Rapid Test Result</h3>
+<p>Horchata, cinnamon whiskey, rum</p>
+<br>
+<h2>Draught Beers</h2>
+<p>Pacifico</p>
+<p>Kulshan Transporter</p>
+<p>Menance Tirith Pale</p>
+<p>Crux Golden Pilsner</p>
+<p>Georgetown Bodhizafa IPA</p>
+<p>Larrabee Lager Co. Hefeweizen</p>
+<p>Menace Brewing Nitro Stout</p>
+<p>Kulshan Brewing Storm Clouds Doppelbock</p>
+<p>Dry Humor Cider</p>
+<br>
+<h2>Bottles / Cans</h2>
+<p>Modelo</p>
+<p>Coors Light Tallboy</p>
+<p>Corona</p>
+<p>White Claw (mango)</p>
+<p>Yonder Cider (Blackberry & Sage)</p>
+<br>
+<h2>Non-Alcoholic</h2>
+<p>Athletic Brewing Golden Dawn</p>
+<p>Athletic Brewing IPA</p>
+<p>Phony Negroni</p>
+<p>H<sub>2</sub>O (free with a smile)</p>
+</div>
 `;
 
-const linksHTML = `
+const linksHTML = `<div id="links">
 <h1>Visit our sister bars:</h1>
 <h2><a href="https://www.theadmiraltylounge.com">The Admiralty Lounge</a>
 <br><br>
-<a href="https://www.bellaciao.bar">Bella Ciao</a></h2>
+<a href="https://www.bellaciao.bar">Bella Ciao Pizza Tavern</a></h2>
+</div>
 `;
 
 const defaultText = `<h2>A 21 & up eclectic nacho experience.</h2>`;
@@ -78,10 +109,12 @@ function pullTopBar() {
     surprise.style.transition = '0.75s';
     surprise.style.bottom = '30%';
     surprisetop.style.height = '100%';
+    surprise.style.position = 'fixed';
     // mainText.innerHTML = "";
 }
 
 function retractTopBar(event) {
+    surprise.style.position = 'absolute';
     document.getElementById('nacho-rule').classList.remove('fadein');
     document.getElementById('nacho-rule').classList.add('fadeout');
 
@@ -106,3 +139,5 @@ function retractTopBar(event) {
     surprise.style.bottom = '130vh';
     surprisetop.style.height = '100%';
 }
+
+document.getElementById('hand').style = "display: block";

@@ -11,31 +11,23 @@
     src: url(FuturaStd-Medium.otf);
 }
 
-html, body {
-    /* height: auto; */
-    /* margin: 0; */
-}
-
 html {
     background-color: black;
     margin: auto;
-    
-    min-height: 700px;
-    max-height: 100vh;
+\    max-height: 100vh;
 }
 
 body {
-    height: 100%;
-    min-height: 700px;
+    overflow: auto;
     align-self: center;
-    margin: auto;
+    margin: auto 0;
     font-family: Futura-Med;
     width: 100%;
     background-image: linear-gradient(165deg, var(--lime), var(--rose), var(--gold));
 }
 
 main {
-    min-height: 700px;
+    min-height: 60vh;
 }
 
 header {
@@ -70,7 +62,6 @@ header h3 {
     position: absolute;
     font-size: 1.5em;
     bottom: 5px;
-    /* display: flex; */
     right: 5px;
     z-index: 2;
 }
@@ -89,8 +80,8 @@ header h3 {
 }
 
 @keyframes hand {
-    from {top: 26vh;}
-    to {top: 28vh;}
+    from {top: 22vh;}
+    to {top: 23vh;}
 }
 
 @keyframes fadein {
@@ -117,12 +108,6 @@ header h3 {
     margin-right: 5px;
 }
 
-@media only screen and (max-width: 500px) {
-    #hours {
-        transform: translateX(0%);
-    }
-}
-
 #socials {
     padding-right: 10px;
 }
@@ -133,7 +118,7 @@ header h3 {
 }
 
 #topbar {
-    position: absolute;
+    position: fixed;
     justify-content: space-between;
     top: 0px;
     left: 0px;
@@ -156,7 +141,7 @@ header h3 {
 
 #toplogo {
     position: relative;
-    /* transform: translateY(-555px); */
+    cursor: pointer;
     max-height: 25vh;
     min-height: 20vh;
     margin-bottom: 0;
@@ -169,28 +154,51 @@ header h3 {
 }
 
 #coming-soon {
-    height: 100%;
-    /* margin-top: -25vh; */
+    max-height: 100%;
     text-align: center;
     width: 100%;
     color: white;
     z-index: 9;
+    font-size: 1.5em;
+}
+
+#coming-soon h2 {
+    font-size: 1.25em;
+}
+
+#coming-soon h3 {
+    font-size: 0.9em;
+}
+
+#coming-soon p {
+    font-size: 0.75em;
 }
 
 #about-us {
     max-width: 75%;
     margin: 0 auto;
-    font-size: 1.5em;
     transform: translateY(-15vh);
+    /* font-size: 1.5em; */
+    /* transform: translateY(-15vh); */
 }
 
 #nacho-styles {
     transform: translateY(-15vh);
+
+    /* transform: translateY(-15vh); */
+}
+
+#drink-menu {
+    transform: translateY(-15vh);
+}
+
+#links {
+    transform: translateY(-15vh);
+
 }
 
 #surprise-top {
     position: relative;
-    /* margin-top: 17em; */
     color: black;
     height: 80%;
     background-image: url('./surprise-bg-landscape.webp');
@@ -232,11 +240,12 @@ footer {
     background-color: black;
     position: fixed;
     bottom: 0px;
-    height: 75px;
-    max-height: 75px;
+    height: 90px;
+    max-height: 8em;
     width: 100%;
     color: white;
     z-index: 2;
+    /* padding-bottom: 5%; */
 }
 
 #place {
@@ -248,11 +257,20 @@ footer {
 
 #hours {
     line-height: 0.1;
-    transition: transform 0.5s;
+    /* transition: transform 0.5s; */
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+#footer-hours-link {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+}
+
+#hours h4 {
+    line-height: 1;
 }
 
 #hours a {
@@ -280,7 +298,6 @@ footer {
 
     #surprise-top {
         position: relative;
-        /* margin-top: 17em; */
         color: black;
         height: 80%;
         background-image: url('./surprise-bg-portrait.webp');
@@ -301,13 +318,11 @@ footer {
     height: 55%;
     width: 40vw;
     margin: 0 auto;
-    /* margin-top: 425px; */
     bottom: 10%;
     margin-left: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
 #surprise-box h2 {
@@ -323,7 +338,7 @@ footer {
 
 @media screen and (max-width: 500px) {
     #place, #hours {
-        font-size: 0.6em;
+        font-size: 0.8em;
         align-self: center;
     }
 
@@ -337,23 +352,22 @@ footer {
         max-height: 18vh;
     }
 
-    #hand {
-        /* fix this */
-    }
-
     #surprise {
         background-color: black;
-        height: 100%;
-    }
-
-    #surprise-top {
-        /* margin-top: 0em; */
-    }
-
-    #hand {
-        
-        /* left: 19vw; */
-        /* top: -50px; */
     }
     
+}
+
+@media screen and (orientation: portrait) and (max-height: 900px) {
+    #surprise-box {
+        height: 45%;
+        bottom: 20%;
+        justify-content: center;
+        line-height: 0em;
+    }
+
+    @keyframes hand {
+        from {top: 20vh;}
+        to {top: 22vh;}
+    }
 }
