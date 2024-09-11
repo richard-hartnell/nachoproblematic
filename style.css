@@ -50,7 +50,7 @@ header h3 {
 #hand {
     position: fixed;
     display: block;
-    /* left: 10vw; */
+    left: 10vw;
     max-height: 40px;
     animation-name: hand;
     animation-duration: 0.5s;
